@@ -87,7 +87,7 @@ action :create do
   end
 
   ## install filebeat yum/apt
-#  if %w[fedora rhel amazon debian].include?(node['platform_family'])
+  if %w[fedora rhel amazon debian].include?(node['platform_family'])
     # setup yum/apt repository
 #    elastic_repo_opts = new_resource.elastic_repo_options.dup
 #    elastic_repo_opts['version'] = new_resource.version
